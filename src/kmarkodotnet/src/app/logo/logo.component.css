@@ -1,10 +1,28 @@
 .container{
     margin: 10px;
     padding: 10px;
-    background: rgb(35, 35, 35);
+    align-content: center;
+    text-align: center;
+}
+.container:hover{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(60, 60, 60);
     align-content: center;
 }
 
 .domain{
     color: orange;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
 }

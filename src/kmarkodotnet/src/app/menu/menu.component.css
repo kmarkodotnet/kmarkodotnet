@@ -13,26 +13,41 @@
     margin:0px;
     list-style: none;
     vertical-align: middle;
+    text-align: center;
 }
 
 ul > li{
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 50px;
 }
 
-li > div{
+a > div{
     opacity:0;
     /* max-height:0px!important;
     max-width:0px!important; */
 }
 
-li > i:hover{
+a > i:hover{
     opacity:0;
     /* max-height:0px!important;
     max-width:0px!important; */
 }
-li > i:hover ~ div{
+a > i:hover ~ div{
     opacity:100;
     margin-top:-20px!important;
     margin-bottom: 20px;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
 }
