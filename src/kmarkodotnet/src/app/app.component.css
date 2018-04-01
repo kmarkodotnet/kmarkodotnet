@@ -16,9 +16,15 @@
     left:0px;
     width:100px;
     font-family: Impact;
+    /* font-family: font-file-82132; */
+    /* font-family: 'La Belle Aurore', cursive; */
+    
 }
 
 .baseFontColor{
-    color: greenyellow;
-    
+    color: grey;
+}
+
+.selectedFontColor{
+    color:greenyellow;
 }
