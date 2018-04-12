@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+@keyframes fontbulger {
+    0% {
+      font-size: 3em;
+    }
+    50% {
+      font-size: 4em;
+    }
+    100% {
+      font-size: 3em;
+    }
+  }
+  .xxx{
+    font-size: 3em;
+
+}
+.xxx:hover{
+    font-size: 3em;
+    animation: fontbulger 5s;
+}
+
+.html{
+    font-family: 'Dancing Script', cursive;
+    color:rgb(80, 80, 80);
+    
+}
+/* 
+.animated
+{
+-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both
+}
+@-webkit-keyframes rubberBand
+{
+    0% { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+    30% { -webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}
+    40% { -webkit-transform:scale3d(0.75,1.25,1);transform:scale3d(0.75,1.25,1)}
+    50% { -webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}
+    65% { -webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}
+    75% { -webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}
+    100% { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+}
+ 
+@keyframes rubberBand
+{
+0%
+{
+-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%
+{
+-webkit-transform:scale3d(1.25,.75,1);-ms-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%
+{
+-webkit-transform:scale3d(0.75,1.25,1);-ms-transform:scale3d(0.75,1.25,1);transform:scale3d(0.75,1.25,1)}50%
+{
+-webkit-transform:scale3d(1.15,.85,1);-ms-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%
+{
+-webkit-transform:scale3d(.95,1.05,1);-ms-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%
+{
+-webkit-transform:scale3d(1.05,.95,1);-ms-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%
+{
+-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+.rubberBand
+{
+-webkit-animation-name:rubberBand;animation-name:rubberBand} */

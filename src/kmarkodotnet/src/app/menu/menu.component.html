@@ -3,7 +3,7 @@
 
   </app-logo>
   <ul class="menuItems">
-      <li *ngFor="let menuItem of menuItems" (click)="onSelect(menuItem)">
+      <li *ngFor="let menuItem of menuItems" (click)="onSelect(menuItem)" [class]="menuItem.AdditionalClass">
         <a [routerLink]="menuItem.RouterLink" class="baseFontColor">
           <i class="{{menuItem.Icon}}" [class.selected]="menuItem === selectedMenuItem"></i>
           <div>{{menuItem.Title}}</div>
@@ -12,12 +12,12 @@
 
     <li class="baseFontColor outerTop">
       <a href="https://www.facebook.com/smartdevelopdotnet" class="baseFontColor">
-        <span><i class="fa fa-facebook"></i></span>
+        <span><i class="fa fa-facebook outerUrl"></i></span>
       </a>
     </li>
     <li class="baseFontColor">
       <a href="https://www.linkedin.com/in/kriszti%C3%A1n-mark%C3%B3-42baaa60/" class="baseFontColor">
-        <span><i class="fa fa-linkedin"></i></span>
+        <span><i class="fa fa-linkedin outerUrl"></i></span>
       </a>
     </li>
   </ul>
