@@ -1,11 +1,12 @@
-import { ModuleWithProviders }  from '@angular/core';  
-import { Routes, RouterModule } from '@angular/router';  
+import { ModuleWithProviders }  from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
   
-import { homeRoutes }    from './home/home.router';  
-// import { catRoutes }    from './cats/cat.routes';  
-// import {birdRoutes} from './birds/bird.routes';  
-  
-// Route Configuration  
+import { homeRoutes }    from './home/home.router';
+import { experiencesRoutes }    from './experiences/experiences.router';
+import { skillsRoutes }    from './skills/skills.router';
+import { familyRoutes }    from './family/family.router';
+import { contactRoutes }    from './contact/contact.router';
+
 export const routes: Routes = [  
     {  
         path: '',  
@@ -13,8 +14,10 @@ export const routes: Routes = [
         pathMatch: 'full'
     },  
    ...homeRoutes,  
-//   ...dogRoutes,  
-//   ...birdRoutes  
+   ...experiencesRoutes,
+   ...skillsRoutes,
+   ...familyRoutes,
+   ...contactRoutes,
 ];  
   
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

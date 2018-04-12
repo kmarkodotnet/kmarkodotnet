@@ -3,41 +3,12 @@
 
   </app-logo>
   <ul class="menuItems">
-      <li *ngFor="let menuItem of menuItems"
-        [class.selected]="hero === selectedHero"
-        (click)="onSelect(hero)">
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      <li *ngFor="let menuItem of menuItems" (click)="onSelect(menuItem)">
+        <a [routerLink]="menuItem.RouterLink" class="baseFontColor">
+          <i class="{{menuItem.Icon}}" [class.selected]="menuItem === selectedMenuItem"></i>
+          <div>{{menuItem.Title}}</div>
+        </a>
       </li>
-    <!-- <li>
-      <a [routerLink]="['/home']"  class="baseFontColor">
-        <i class="fa fa-home fa-2x"></i>
-        <div>Home</div>
-      </a>
-    </li>
-    <li class="baseFontColor">
-      <a [routerLink]="['/home']"  class="baseFontColor">
-        <i class="fa fa-history fa-2x"></i>
-        <div>Experiences</div>
-      </a>
-    </li>
-    <li class="baseFontColor">
-      <a [routerLink]="['/home']"  class="baseFontColor">
-        <i class="fa fa-code fa-2x"></i>
-        <div>Skills</div>
-      </a>
-    </li>
-    <li class="baseFontColor">
-      <a [routerLink]="['/home']"  class="baseFontColor">
-        <i class="fa fa-heart fa-2x"></i>
-        <div>Family</div>
-      </a>
-    </li>
-    <li class="baseFontColor">
-      <a [routerLink]="['/home']"  class="baseFontColor">
-        <i class="fa fa-envelope fa-2x"></i>
-        <div>Contact</div>
-      </a>
-    </li>
 
     <li class="baseFontColor outerTop">
       <a href="https://www.facebook.com/smartdevelopdotnet" class="baseFontColor">
@@ -48,6 +19,6 @@
       <a href="https://www.linkedin.com/in/kriszti%C3%A1n-mark%C3%B3-42baaa60/" class="baseFontColor">
         <span><i class="fa fa-linkedin"></i></span>
       </a>
-    </li> -->
+    </li>
   </ul>
 </div>
