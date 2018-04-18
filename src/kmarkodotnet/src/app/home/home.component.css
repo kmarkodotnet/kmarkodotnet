@@ -1,30 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
+@font-face { font-family: "La Belle Aurore"; src: url("../../assets/fonts/LaBelleAurore.ttf"); }
+@font-face { font-family: "Amethyst"; src: url("../../assets/fonts/AmethystModified-Regular.otf"); }
+@font-face { font-family: "AmethystBasic-Regular"; src: url("../../assets/fonts/AmethystBasic-Regular.otf"); }
+@font-face { font-family: "mensch-thin"; src: url("../../assets/fonts/mensch-thin.ttf"); }
+
+.htmlCode{
+    font-family: 'La Belle Aurore', cursive;
+    color:rgb(80, 80, 80);
+    position: absolute;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+
+.welcome>div>span{
+  font-size: 3em;
+  color: white;
+  font-family: 'AmethystBasic-Regular';
+}
+.welcome>div>span:hover{
+  font-size: 3em;
+  color: white;
+  font-family: 'Amethyst';
+}
+.htmlOpen{
+  top: Calc(5%);
+  left: Calc(2%);
+}
+.htmlClose{
+  top: Calc(95%);
+  left: Calc(2%);
+}
+.bodyOpen{
+  top: Calc(10%);
+  left: Calc(5%);
+}
+.bodyClose{
+  top: Calc(90%);
+  left: Calc(5%);
+}
+.h1Open{
+  top: Calc(15%);
+  left: Calc(10%);
+}
+.h1Content{
+  position: absolute;
+  top: Calc(18%);
+  left: Calc(12%);
+}
+.h1Close{
+  position: relative!important;
+  /* top: Calc(31%);*/
+  left: Calc(10%); 
+}
+
+
 @keyframes fontbulger {
-    0% {
-      font-size: 3em;
-    }
-    50% {
-      font-size: 4em;
-    }
-    100% {
-      font-size: 3em;
-    }
-  }
-  .xxx{
+  0% {
     font-size: 3em;
+  }
+  50% {
+    font-size: 4em;
+  }
+  100% {
+    font-size: 3em;
+  }
+}
+.xxx{
+  font-size: 3em;
 
 }
 .xxx:hover{
-    font-size: 3em;
-    animation: fontbulger 5s;
+  font-size: 3em;
+  animation: fontbulger 5s;
 }
 
-.html{
-    font-family: 'Dancing Script', cursive;
-    color:rgb(80, 80, 80);
-    
-}
 /* 
 .animated
 {
