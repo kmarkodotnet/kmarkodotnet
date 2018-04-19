@@ -12,6 +12,15 @@
     -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 
+.xp{
+  display: inline-block;
+  padding: 7px;
+  color: rgb(180, 180, 180);
+}
+.bracket:hover ~ .bracket{
+  color: red;
+}
+
 .welcome>div>span{
   font-size: 3em;
   color: white;
@@ -39,20 +48,31 @@
   left: Calc(5%);
 }
 .h1Open{
-  top: Calc(15%);
+  top: Calc(35%);
   left: Calc(10%);
+}
+.h1Close{
+  /* top: Calc(31%);*/
+  padding-top: Calc(2%);
+  left: Calc(-2%); 
 }
 .h1Content{
   position: absolute;
-  top: Calc(18%);
+  top: Calc(38%);
   left: Calc(12%);
 }
-.h1Close{
-  position: relative!important;
-  /* top: Calc(31%);*/
-  left: Calc(10%); 
+.devOpen{
+  padding-top: Calc(6%);
+  left: Calc(-2%);
 }
-
+.devClose{
+  /* top: Calc(31%);*/
+  padding-top: Calc(3%);
+  left: Calc(-2%); 
+}
+.devContent{
+  padding-top: Calc(12%);
+}
 
 @keyframes fontbulger {
   0% {
@@ -64,14 +84,6 @@
   100% {
     font-size: 3em;
   }
-}
-.xxx{
-  font-size: 3em;
-
-}
-.xxx:hover{
-  font-size: 3em;
-  animation: fontbulger 5s;
 }
 
 /* 

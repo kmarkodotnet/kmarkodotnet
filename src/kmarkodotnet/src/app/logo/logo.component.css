@@ -25,8 +25,13 @@
     }
   } */
 
-
-.domain{
+  .name1 .name2{
+      color: lightgray;
+  }
+  .container:hover > .name1{
+    color:greenyellow;
+}
+.container:hover > .name2{
     color: orange;
 }
 a:link {
